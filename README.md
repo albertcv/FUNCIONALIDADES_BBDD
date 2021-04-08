@@ -1,5 +1,6 @@
 # FUNCIONALIDADES-de-la-APLICACI-N-masterchef
-Crea las funciones o procedimientos adecuados que implementen las siguientes funcionalidades de la aplicación WEB MASTERCHEF (una vez probadas implementa un PACKAGE):      1. (1pt) Mostrar los datos de la receta que tiene más estrellas, junto con el nombre de su chef, en un formato listado para imprimir, con titulo y forma visual agradable.     
+Crea las funciones o procedimientos adecuados que implementen las siguientes funcionalidades de la aplicación WEB MASTERCHEF (una vez probadas implementa un PACKAGE):     
+1. (1pt) Mostrar los datos de la receta que tiene más estrellas, junto con el nombre de su chef, en un formato listado para imprimir, con titulo y forma visual agradable.     
 2. (2pt) Crear triggers para que en las tablas que tengais un id que se va incrementando, se pueda realizar un insert sin informar este campo y el trigger lo informe.     
 3. (2pt) Mostrar las 3 peores recetas, con sus ingredientes y nombre de chef, en un formato listado para imprimir, con titulo y forma visual agradable (podeis poner lineas con guiones, asteriscos.     
 4. (1pt) Pedir al usuario una categoría, y que se le muestren todas las recetas de esa categoría.     
