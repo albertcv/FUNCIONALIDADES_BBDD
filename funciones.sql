@@ -37,6 +37,23 @@ BEGIN
 	END LOOP;
 	CLOSE PEORES_CURSOR;
 END;
+/*6*/
+DECLARE 
+CURSOR c1 IS
+SELECT  rownum, r2.nom_recepta, i2.NOM_INGREDIENT, i2.TIPUS
+FROM RECEPTA r2 JOIN CONSTA c2 
+ON (r2.ID_RECEPTA=c2.ID_RECEPTA)
+JOIN INGREDIENT i2 
+ON (i2.ID_ING=c2.ID_ING)
+WHERE r2.NOM_RECEPTA IS NOT NULL;
+BEGIN
+	DBMS_OUTPUT.PUT_LINE('***************************');
+	DBMS_OUTPUT.PUT_LINE('* ID         RECEPTA*');
+	FOR var IN c1 LOOP
+	DBMS_OUTPUT.PUT_LINE('* '||var.rownum||'----------'|| var.nom_recepta ||' --------- ' ||var.nom_ingredient ||' -------- '|| var.tipus);
+	END LOOP;
+	DBMS_OUTPUT.PUT_LINE('***************************');
+END;
 
 /*7*/
 CREATE OR REPLACE PROCEDURE INSERTAR_XEF(VAR_NOM IN VARCHAR2,
